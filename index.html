@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pogoda 🌧️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <!-- Tutaj pobrałam czcionkę z Google Fonts -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h1>Pogoda:</h1>
+        <div class="main-info">
+          <div>
+            <h3 class="nazwa-miasta"></h3>
+            <input type="text" placeholder="Wpisz nazwę miasta..." /><button>
+              Wyślij
+            </button>
+            <p class="warning"></p>
+          </div>
+          <img
+            src="./img/unknown.png"
+            alt="Obrazek przedstawiający pogodę"
+            class="photo" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="headings">
+          <p>Pogoda:</p>
+          <p>Temperatura:</p>
+          <p>Wilgotność:</p>
+        </div>
+        <div class="pogoda-info">
+          <p class="pogoda"></p>
+          <p class="temperatura"></p>
+          <p class="wilgotnosc"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

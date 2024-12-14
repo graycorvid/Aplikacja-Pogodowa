@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(315deg, #431796 0%, #af8ef2 74%);
+  font-size: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px dashed #ddd;
+}
+
+input::placeholder {
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  padding: 10px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  background: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: rgb(249, 249, 249);
+  background-color: rgb(89, 34, 192);
+}
+
+.wrapper {
+  width: 800px;
+  padding: 20px 40px;
+  margin-top: 100px;
+  background-color: rgba(46, 33, 63, 0.8);
+  border: 4px solid rgb(116, 2, 245);
+  border-radius: 25px;
+}
+
+.top {
+  height: 260px;
+}
+
+.bottom {
+  height: 140px;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.nazwa-miasta {
+  font-size: 40px;
+}
+
+.headings,
+.pogoda-info {
+  display: flex;
+  align-items: center;
+}
+
+.headings p,
+.pogoda-info p {
+  width: 33.3%;
+  text-align: center;
+}
+
+.headings {
+  height: 35%;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+
+.pogoda-info {
+  height: 65%;
+  font-size: 26px;
+}
+
+.photo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.warning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(212, 73, 240);
+}
+footer {
+  font-size: 14px;
+  color: #9e829f;
+  width: 100%;
+  padding: 20px;
+  text-align: end;
+}
+/* dla mniejszych ekranów: */
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  .main-info {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .nazwa-miasta {
+    font-size: 30px;
+  }
+
+  .headings p,
+  .pogoda-info p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
